@@ -1,6 +1,12 @@
 # Numerical computing
 numpy
 
+# Tensorboard interface
+tensorboardX
+
+# Progress bar
+tqdm
+
 # NLP utilities
 spacy
 
