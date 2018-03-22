@@ -145,7 +145,8 @@ def main():
 
         logger.info("Running model on the test set")
         (loss, accuracy, predictions) = evaluate(
-            saved_model, test_dataset, args.batch_size, args.cuda)
+            saved_model, test_dataset, args.batch_size,
+            args.cuda, has_labels=False)
         if has_labels:
             logger.info("Done evaluating on test set!")
             logger.info("Test Loss: {:.4f}".format(loss))
@@ -286,7 +287,8 @@ def train_epoch(model, train_dataset, validation_dataset,
         if model.global_step % 500 == 0:
             # Calculate metrics on validation set.
             (loss, accuracy, _) = evaluate(
-                model, validation_dataset, batch_size, cuda)
+                model, validation_dataset, batch_size,
+                cuda, has_labels=True)
             # Save a checkpoint.
             save_name = ("{}_step_{}_loss_{:.3f}_"
                          "accuracy_{:.3f}.pth".format(
