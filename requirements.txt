@@ -1,0 +1,14 @@
+# Numerical computing
+numpy
+
+# NLP utilities
+spacy
+
+# Unit tests
+pytest
+
+# Lets pytest find our code
+pytest-pythonpath
+
+# Style linting
+flake8
