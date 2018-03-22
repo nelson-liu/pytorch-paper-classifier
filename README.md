@@ -4,6 +4,13 @@ This is a bare-metal PyTorch implementation of the
 [AllenNLP academic paper classifier example](https://github.com/allenai/allennlp-as-a-library-example),
 which demonstrates how to build a model with AllenNLP as a dependency.
 
+## Table of Contents
+
+- [Setting Up](#setting-up)
+- [Downloading the data](#downloading-the-data)
+- [Basic Usage](#basic-usage)
+  * [Visualizing Results](#visualizing-results)
+
 ## Setting Up
 
 The code in this project was developed with Python 3.6, so we recommend using that to run it.
