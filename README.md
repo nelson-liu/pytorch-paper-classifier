@@ -2,7 +2,12 @@
 
 This is a bare-metal PyTorch implementation of the
 [AllenNLP academic paper classifier example](https://github.com/allenai/allennlp-as-a-library-example),
-which demonstrates how to build a model with AllenNLP as a dependency.
+which demonstrates how to build a model with [AllenNLP](http://allennlp.org/) as a dependency. This repo is 
+fully functional, but it's main purpose is to demonstrate AllenNLP's value prop. 
+
+It's far less extensible than the version that uses AllenNLP, and less featureful as well (e.g., there's no 
+bucketing of batches implemented and no early stopping). In addition, this code is far more complex and lengthy
+than the AllenNLP example (~630 Python LOC in this repo vs 110 in the AllenNLP example).
 
 ## Table of Contents
 
