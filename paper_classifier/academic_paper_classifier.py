@@ -15,6 +15,10 @@ class AcademicPaperClassifier(nn.Module):
                  feedforward_hidden_dims,
                  feedforward_activations,
                  feedforward_dropouts):
+        # Save the construction arguments, useful for serialization
+        self.init_arguments = locals()
+        self.init_arguments.pop("self")
+        self.init_arguments.pop("__class__")
         super(AcademicPaperClassifier, self).__init__()
 
         vocab_size = embedding_matrix.size(0)
