@@ -73,7 +73,7 @@ def main():
     parser.add_argument("--optimizer", type=str, default="adagrad",
                         choices=["adagrad", "adadelta", "adam", "sgd", "rmsprop"],
                         help="The optimizer to use.")
-    parser.add_argument("--lr", type=float, default=0.5,
+    parser.add_argument("--lr", type=float, default=0.01,
                         help="The learning rate to use.")
     parser.add_argument("--load-path", type=str,
                         help=("Path to load a saved model from and "
